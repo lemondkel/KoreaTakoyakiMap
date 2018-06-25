@@ -1,0 +1,50 @@
+doctype html
+html
+    head
+        title= title
+        link(rel="shortcut icon" href="")
+        //-
+            shortcut icon은 ico 파일
+        link(rel="apple-touch-icon image_src" href="a")
+        link(rel="apple-touch-icon" sizes="76x76" href=".png")
+        link(rel="apple-touch-icon" sizes="120x120" href=".png")
+        link(rel="apple-touch-icon" sizes="152x152" href=".png")
+        // apple-touch-startup-image은 사파리 로딩이미지 (웹이지만 가능)
+        link(rel="apple-touch-startup-image", href="/startup.png")
+        // apple-mobile-web-app-status-bar-style 은 상태바 색상, black / default(회색) , black-translucent
+        // https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/?hl=ko
+        meta(name="apple-mobile-web-app-status-bar-style", content="black-translucent")
+        //-
+            apple-touch-icon은 png 파일, 76x76, 120x120, 152x152
+        meta(name="msapplication-square70x70logo" content=".png")
+        meta(name="msapplication-square150x150logo" content=".png")
+        meta(name="msapplication-square310x310logo" content=".png")
+        meta(name="msapplication-wide310x150logo" content=".png")
+        //-
+            IE & Windows Phone
+            70x70, 150x150, 310x150
+        meta(name="msapplication-TileColor" content="#004947")
+        // MS 어플리케이션 타일색
+        meta(name="theme-color" content="#004947")
+        // Android Chrome, Firefox OS, Opera 등 Webkit 메타 테마 색상
+        meta(name="application-name" content="Mamu")
+        meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+        meta(name="google-site-verification" content="")
+        meta(name="keywords" content="타코야키")
+        meta(name="description", content="This is desc")
+        meta(property="fb:app_id", content=title)
+        meta(property="og:title", content="")
+        meta(property="og:description", content="")
+        meta(property="og:url", content="")
+        meta(property="og:image", content="")
+        meta(property="og:type", content="website")
+        meta(property="og:site_name", content=title)
+        meta(name="twitter:card" content="summary")
+        meta(name="twitter:domain" content="mamyu.com")
+        meta(name="twitter:title" property="og:title" content=title)
+        meta(name="twitter:description" property="og:description" content="내용")
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        script(type="text/javascript", src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=9JgEft5aGbbVScKOQ5YO&submodules=geocoder")
+    body
+        block content
+        block js

@@ -1,0 +1,74 @@
+body {
+	padding: 0;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #00B7FF;
+}
+
+#map {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1000px;
+	height: 600px;
+}
+
+span.date {
+	color: #999;
+	font-size: 12px;
+}
+
+.search {
+	position: absolute;
+	z-index: 1000;
+	top: 20px;
+	left: 20px;
+}
+
+.search #address {
+	width: 150px;
+	height: 20px;
+	line-height: 20px;
+	border: solid 1px #555;
+	padding: 5px;
+	font-size: 12px;
+	box-sizing: content-box;
+}
+
+.search #submit {
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	font-size: 12px;
+	border: solid 1px #555;
+	border-radius: 3px;
+	cursor: pointer;
+	box-sizing: content-box;
+}
+
+div.item {
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+}
+
+i.up {
+	position: relative;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+	background: no-repeat center;
+	-webkit-background-size: 90%;
+	background-size: 90%;
+	cursor: pointer;
+}
+
+i.up:hover {
+	opacity: 0.7;
+}
+
+i.up {
+	background-image: url(../images/up.png);
+}

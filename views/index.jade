@@ -1,0 +1,10 @@
+extends layout
+
+block js
+    script(type="text/javascript", src="/javascripts/jquery-3.3.1.min.js")
+    script(type="text/javascript", src="/javascripts/index.js")
+block content
+    div#map
+        div(class="search")
+            input(id="address", type="text", placeholder="검색할 주소", value="")
+            input(id="submit", type="button", value="주소 검색")
